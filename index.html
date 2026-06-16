@@ -310,16 +310,15 @@ you’re the place where my heart feels home.</p>
 <div class="page" id="p9">
 <h1>Order Confirmed 🎉</h1>
 <p>Your surprise is on the way 💖</p>
-</div>
 
 <audio id="music" loop style="display:none;">
-  <source src="assets/images/song.mp3" type="audio/mpeg">
+    <source src="assets/images/song.mp3" type="audio/mpeg">
 </audio>
   
 <script>
-document.addEventListner("click", function () {
-
-document.getElementById("music").play(); }, { once: true });
+document.addEventListener("click", function () {
+    document.getElementById("music").play();
+}, { once: true });
   
 let response="", gift="", lat="", lng="";
 
