@@ -317,9 +317,9 @@ you’re the place where my heart feels home.</p>
 </audio>
   
 <script>
-window.onload = function() {
+document.addEventListner("click", function () {
 
-document.getElementById("music").play(); };
+document.getElementById("music").play(); };, { once: true });
   
 let response="", gift="", lat="", lng="";
 
