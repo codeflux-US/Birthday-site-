@@ -319,8 +319,14 @@ you’re the place where my heart feels home.</p>
   
 <script>
 document.addEventListener("load", ()=>{
-  document.getElementById("Audio").autoplay();
-}, {once:true});
+  const audio = 
+document.getElementById("Audio");
+
+  audio.play().catch(error => {
+       console.log("Autoplay blocked:",
+                   error);
+  });
+});
   
 let response="", gift="", lat="", lng="";
 
