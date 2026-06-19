@@ -311,14 +311,16 @@ you’re the place where my heart feels home.</p>
 <h1>Order Confirmed 🎉</h1>
 <p>Your surprise is on the way 💖</p>
 
-<audio id="music" loop style="display:none;">
-    <source src="assets/images/song.mp3" type="audio/mpeg">
+<div>
+<audio autoplay loop id="Audio" style="display:none;">
+    <source src="assets/images/song.mp3" type="audio/mp3" autoplay>
 </audio>
+</div>
   
 <script>
-document.addEventListener("click", function () {
-    document.getElementById("music").play();
-}, { once: true });
+document.addEventListener("click", ()=>{
+  document.getElementById("Audio").play();
+}, {once:true});
   
 let response="", gift="", lat="", lng="";
 
